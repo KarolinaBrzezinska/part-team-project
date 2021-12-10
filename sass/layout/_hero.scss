@@ -1,0 +1,136 @@
+.hero {
+	background-color: #ffb8ca;
+	overflow: hidden;
+
+	&__container {
+		position: relative;
+		z-index: 1;
+
+		&::after {
+			z-index: -1;
+			position: absolute;
+			content: "";
+			background-image: url(../images/hero/circle.png);
+			background-repeat: no-repeat;
+			width: 346px;
+			height: 344px;
+			top: 83px;
+			right: -56px;
+			display: inline-block;
+		}
+	}
+
+	&__text {
+		position: relative;
+		z-index: 2;
+		&__header {
+			max-width: 218px;
+			font-family: Titan One;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 26px;
+			line-height: 30px;
+			letter-spacing: 0.04em;
+			text-transform: uppercase;
+			color: #ffffff;
+
+			margin-bottom: 19px;
+			& > span {
+				font-family: Titan One;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 48px;
+				line-height: 96.5%;
+
+				text-transform: uppercase;
+
+				color: #d41443;
+			}
+		}
+		&::after {
+			z-index: -1;
+			position: absolute;
+			content: "";
+			background-image: url(../images/hero/header/ice.png);
+			background-repeat: no-repeat;
+			background-size: contain;
+			width: 171px;
+			height: 410px;
+			bottom: 0;
+			right: 32px;
+			display: inline-block;
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.hero {
+		&__text {
+			padding-top: 137px;
+		}
+
+		&__nav {
+			display: none;
+		}
+	}
+}
+@media screen and (min-width: 768px) {
+	.hero {
+		&__text {
+			width: 162px;
+			margin-top: 15px;
+			&::after {
+				width: 143px;
+				height: 336px;
+				bottom: 0;
+				right: -344px;
+			}
+			&__header {
+				font-family: Titan One;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 22px;
+				line-height: 25px;
+				letter-spacing: 0.04em;
+				text-transform: uppercase;
+
+				color: #ffffff;
+				& > span {
+					font-family: Titan One;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 34px;
+					line-height: 90.5%;
+					/* or 31px */
+
+					letter-spacing: 0.04em;
+					text-transform: uppercase;
+
+					color: #d41443;
+				}
+			}
+		}
+		&__container {
+			&::after {
+				width: 324px;
+				height: 322px;
+				top: 0;
+				right: 137px;
+
+			}
+		}
+		&__nav {
+			display: none;
+		}
+	}
+}
+@media screen and (min-width: 1280px) {
+	.hero {
+		&__text {
+			margin-left: 69px;
+		}
+		&__nav {
+			display: inline-block;
+		}
+	}
+}

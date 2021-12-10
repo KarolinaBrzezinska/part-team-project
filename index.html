@@ -1,23 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        <a href="./index.html">
-        <img src="./images/hero/header/logo.png" alt="logo" width="199" height="50">
-        </a>
-        <div class="buttons">
-         <a href="">
-             <img src="./images/hero/header/menu.png" alt="menu">
-         </a>
-         <button type="button">Buy now</button>
-        </div>
-        <a href=""></a>
-    </header>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+			integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+			crossorigin="anonymous"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./css/main.min.css" />
+		<title>Ice Cream Team</title>
+		<link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+	</head>
+
+	<body>
+		<section class="hero">
+			<div class="container hero__container">
+				<header class="header">
+					<a href="./index.html">
+						<picture>
+						<img
+							srcset="
+							./images/hero/header/logo.png 1x,
+							./images/hero/header/logo@2x.png 2x,
+							"
+							src="./images/hero/header/logo.png"
+							alt="logo"
+							width="199"
+						/>
+						</picture>
+					</a>
+					<nav class="hero__nav nav">
+						<ul class="nav__list list">
+							<li class="nav__list__item nav__list__item--active">Home</li>
+							<li class="nav__list__item">About us</li>
+							<li class="nav__list__item">How it’s made?</li>
+							<li class="nav__list__item">Our products</li>
+							<li class="nav__list__item">Contact</li>
+						</ul>
+					</nav>
+					<div class="hero__buttons buttons">
+						<a href="" class="buttons__menu">
+							<img src="./images/hero/header/menu.png" alt="menu" class="buttons__menu_img" />
+						</a>
+						<button type="button" class="buttons__buy">Buy now ></button>
+					</div>
+				</header>
+				<div class="hero__text">
+					<h1 class="hero__text__header">ice cream made with <span>passion</span></h1>
+					<div class="btn-hero">
+						<button type="button" class="btn-hero__products">Products</button>
+						<button type="button" class="btn-hero__about">
+							How it’s made?
+						</button>
+					</div>
+				</div>
+				
+			</div>
+		</section>
+	</body>
 </html>
+ 
