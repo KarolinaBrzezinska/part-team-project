@@ -1,20 +1,18 @@
 .buttons {
 	display: flex;
 	justify-content: space-between;
-}
 
-@media screen and (max-width: 767px) {
-	.buttons {
-		&__buy {
+	@media screen and (min-width: 768px) and (max-width: 1279px) {
+		align-items: center;
+		width: 210px;
+	}
+	
+	&__buy {
+		@media screen and (max-width: 767px) {
 			display: none;
 		}
-	}
-}
-
-@media screen and (min-width: 768px) {
-	.buttons {
-		&__buy {
-			width: 160px;
+		@media screen and (min-width: 768px) {
+			width: 159px;
 			height: 44px;
 			background: #ffffff;
 			border-radius: 22px;
@@ -28,17 +26,8 @@
 			color: #d41443;
 		}
 	}
-}
-
-@media screen and (min-width: 768px) and (max-width: 1279px) {
-	.buttons {
-		align-items: center;
-		width: 210px;
-	}
-}
-@media screen and (min-width: 1280px) {
-	.buttons {
-		&__menu {
+	&__menu {
+		@media screen and (min-width: 1280px) {
 			display: none;
 		}
 	}
